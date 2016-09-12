@@ -279,6 +279,7 @@
 				INFOPLIST_FILE = Configs/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moya-unbox.Moya-Unbox";
 				PRODUCT_NAME = Moya_Unbox;
 				SKIP_INSTALL = YES;
@@ -301,6 +302,7 @@
 				INFOPLIST_FILE = Configs/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moya-unbox.Moya-Unbox";
 				PRODUCT_NAME = Moya_Unbox;
 				SKIP_INSTALL = YES;
