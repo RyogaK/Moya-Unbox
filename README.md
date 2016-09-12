@@ -12,7 +12,7 @@ Inspired by [Moya-ObjectMappter](https://github.com/ivanbruel/Moya-ObjectMapper)
 ## Carthage
 
 ```ruby
-github "https://github.com/RyogaK/Moya-Unbox"
+github "RyogaK/Moya-Unbox"
 ```
 
 # Usage
