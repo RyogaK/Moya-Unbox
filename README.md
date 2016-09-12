@@ -5,7 +5,7 @@ Moya-Unbox
 - [Moya](https://github.com/Moya/Moya)
 - [RxSwift](https://github.com/ReactiveX/RxSwift) 
 
-Inspired by [Moya-ObjectMappter](https://github.com/ivanbruel/Moya-ObjectMapper).
+Inspired by [Moya-ObjectMapper](https://github.com/ivanbruel/Moya-ObjectMapper).
 
 # Installation
 
