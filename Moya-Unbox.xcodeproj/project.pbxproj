@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		297A99991D86BD700074123C /* Observable+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297A99981D86BD700074123C /* Observable+Unbox.swift */; };
+		295670021D880E3B00D9D303 /* SignalProducer+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F382741D878B4A0035054D /* SignalProducer+Unbox.swift */; };
+		295670031D880E3B00D9D303 /* Observable+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297A99981D86BD700074123C /* Observable+Unbox.swift */; };
+		295670061D880E3B00D9D303 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412E1D86BA3B00C4194A /* Alamofire.framework */; };
+		295670081D880E3B00D9D303 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412F1D86BA3B00C4194A /* Result.framework */; };
+		295670091D880E3B00D9D303 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D641321D86BC7D00C4194A /* RxSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		295670261D880E4400D9D303 /* SignalProducer+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F382741D878B4A0035054D /* SignalProducer+Unbox.swift */; };
+		2956702A1D880E4400D9D303 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412E1D86BA3B00C4194A /* Alamofire.framework */; };
+		2956702C1D880E4400D9D303 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412F1D86BA3B00C4194A /* Result.framework */; };
+		2956702E1D880E4400D9D303 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F382711D878B1B0035054D /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		295670371D880ED400D9D303 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295670361D880ED400D9D303 /* RxMoya.framework */; };
+		295670391D880EE200D9D303 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295670381D880EE200D9D303 /* ReactiveMoya.framework */; };
 		297A999B1D86BDF00074123C /* Response+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297A999A1D86BDF00074123C /* Response+Unbox.swift */; };
 		29D641301D86BA3B00C4194A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412E1D86BA3B00C4194A /* Alamofire.framework */; };
 		29D641311D86BA3B00C4194A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412F1D86BA3B00C4194A /* Result.framework */; };
-		29D641331D86BC7D00C4194A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D641321D86BC7D00C4194A /* RxSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		29D641351D86BC9000C4194A /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D641341D86BC9000C4194A /* Moya.framework */; };
-		29F382721D878B1B0035054D /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F382711D878B1B0035054D /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		29F382751D878B4A0035054D /* SignalProducer+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F382741D878B4A0035054D /* SignalProducer+Unbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		295670101D880E3B00D9D303 /* RxMoya_Unbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoya_Unbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		295670111D880E3B00D9D303 /* Moya-Unbox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Moya-Unbox-Info.plist"; sourceTree = "<group>"; };
+		295670231D880E4100D9D303 /* RxMoya-Unbox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RxMoya-Unbox-Info.plist"; sourceTree = "<group>"; };
+		295670341D880E4400D9D303 /* ReactiveMoya_Unbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveMoya_Unbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		295670351D880E4400D9D303 /* ReactiveMoya-Unbox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveMoya-Unbox-Info.plist"; sourceTree = "<group>"; };
+		295670361D880ED400D9D303 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		295670381D880EE200D9D303 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
 		297A99981D86BD700074123C /* Observable+Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Unbox.swift"; sourceTree = "<group>"; };
 		297A999A1D86BDF00074123C /* Response+Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Unbox.swift"; sourceTree = "<group>"; };
 		29D641101D86B86F00C4194A /* Moya_Unbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya_Unbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29D641151D86B86F00C4194A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29D6412E1D86BA3B00C4194A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		29D6412F1D86BA3B00C4194A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		29D641321D86BC7D00C4194A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
@@ -31,6 +45,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		295670051D880E3B00D9D303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295670061D880E3B00D9D303 /* Alamofire.framework in Frameworks */,
+				295670081D880E3B00D9D303 /* Result.framework in Frameworks */,
+				295670371D880ED400D9D303 /* RxMoya.framework in Frameworks */,
+				295670091D880E3B00D9D303 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295670291D880E4400D9D303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2956702A1D880E4400D9D303 /* Alamofire.framework in Frameworks */,
+				2956702C1D880E4400D9D303 /* Result.framework in Frameworks */,
+				2956702E1D880E4400D9D303 /* ReactiveCocoa.framework in Frameworks */,
+				295670391D880EE200D9D303 /* ReactiveMoya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29D6410C1D86B86F00C4194A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,8 +74,6 @@
 				29D641301D86BA3B00C4194A /* Alamofire.framework in Frameworks */,
 				29D641351D86BC9000C4194A /* Moya.framework in Frameworks */,
 				29D641311D86BA3B00C4194A /* Result.framework in Frameworks */,
-				29D641331D86BC7D00C4194A /* RxSwift.framework in Frameworks */,
-				29F382721D878B1B0035054D /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +96,10 @@
 				29D6412B1D86B8BD00C4194A /* Sources */,
 				29D6412E1D86BA3B00C4194A /* Alamofire.framework */,
 				29D641341D86BC9000C4194A /* Moya.framework */,
+				295670361D880ED400D9D303 /* RxMoya.framework */,
 				29F382711D878B1B0035054D /* ReactiveCocoa.framework */,
 				29D6412F1D86BA3B00C4194A /* Result.framework */,
+				295670381D880EE200D9D303 /* ReactiveMoya.framework */,
 				29D641321D86BC7D00C4194A /* RxSwift.framework */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				29D641101D86B86F00C4194A /* Moya_Unbox.framework */,
+				295670101D880E3B00D9D303 /* RxMoya_Unbox.framework */,
+				295670341D880E4400D9D303 /* ReactiveMoya_Unbox.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,7 +117,9 @@
 		29D6412A1D86B8B600C4194A /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				29D641151D86B86F00C4194A /* Info.plist */,
+				295670111D880E3B00D9D303 /* Moya-Unbox-Info.plist */,
+				295670351D880E4400D9D303 /* ReactiveMoya-Unbox-Info.plist */,
+				295670231D880E4100D9D303 /* RxMoya-Unbox-Info.plist */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -105,6 +145,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2956700B1D880E3B00D9D303 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2956702F1D880E4400D9D303 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29D6410D1D86B86F00C4194A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +169,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		295670001D880E3B00D9D303 /* RxMoya-Unbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2956700D1D880E3B00D9D303 /* Build configuration list for PBXNativeTarget "RxMoya-Unbox" */;
+			buildPhases = (
+				295670011D880E3B00D9D303 /* Sources */,
+				295670051D880E3B00D9D303 /* Frameworks */,
+				2956700B1D880E3B00D9D303 /* Headers */,
+				2956700C1D880E3B00D9D303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxMoya-Unbox";
+			productName = "Moya-Unbox";
+			productReference = 295670101D880E3B00D9D303 /* RxMoya_Unbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		295670241D880E4400D9D303 /* ReactiveMoya-Unbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 295670311D880E4400D9D303 /* Build configuration list for PBXNativeTarget "ReactiveMoya-Unbox" */;
+			buildPhases = (
+				295670251D880E4400D9D303 /* Sources */,
+				295670291D880E4400D9D303 /* Frameworks */,
+				2956702F1D880E4400D9D303 /* Headers */,
+				295670301D880E4400D9D303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReactiveMoya-Unbox";
+			productName = "Moya-Unbox";
+			productReference = 295670341D880E4400D9D303 /* ReactiveMoya_Unbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		29D6410F1D86B86F00C4194A /* Moya-Unbox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29D641241D86B86F00C4194A /* Build configuration list for PBXNativeTarget "Moya-Unbox" */;
@@ -161,11 +251,27 @@
 			projectRoot = "";
 			targets = (
 				29D6410F1D86B86F00C4194A /* Moya-Unbox */,
+				295670001D880E3B00D9D303 /* RxMoya-Unbox */,
+				295670241D880E4400D9D303 /* ReactiveMoya-Unbox */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2956700C1D880E3B00D9D303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295670301D880E4400D9D303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29D6410E1D86B86F00C4194A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,12 +282,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		295670011D880E3B00D9D303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295670021D880E3B00D9D303 /* SignalProducer+Unbox.swift in Sources */,
+				295670031D880E3B00D9D303 /* Observable+Unbox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		295670251D880E4400D9D303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295670261D880E4400D9D303 /* SignalProducer+Unbox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29D6410B1D86B86F00C4194A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				29F382751D878B4A0035054D /* SignalProducer+Unbox.swift in Sources */,
-				297A99991D86BD700074123C /* Observable+Unbox.swift in Sources */,
 				297A999B1D86BDF00074123C /* Response+Unbox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +311,96 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2956700E1D880E3B00D9D303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Configs/RxMoya-Unbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moya-unbox.RxMoya-Unbox";
+				PRODUCT_NAME = RxMoya_Unbox;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2956700F1D880E3B00D9D303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Configs/RxMoya-Unbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moya-unbox.RxMoya-Unbox";
+				PRODUCT_NAME = RxMoya_Unbox;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		295670321D880E4400D9D303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Configs/ReactiveMoya-Unbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moya-unbox.ReactiveMoya-Unbox";
+				PRODUCT_NAME = ReactiveMoya_Unbox;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		295670331D880E4400D9D303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Configs/ReactiveMoya-Unbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moya-unbox.ReactiveMoya-Unbox";
+				PRODUCT_NAME = ReactiveMoya_Unbox;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		29D641221D86B86F00C4194A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,7 +504,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Configs/Info.plist;
+				INFOPLIST_FILE = "Configs/Moya-Unbox-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -315,7 +527,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Configs/Info.plist;
+				INFOPLIST_FILE = "Configs/Moya-Unbox-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -328,6 +540,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2956700D1D880E3B00D9D303 /* Build configuration list for PBXNativeTarget "RxMoya-Unbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2956700E1D880E3B00D9D303 /* Debug */,
+				2956700F1D880E3B00D9D303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		295670311D880E4400D9D303 /* Build configuration list for PBXNativeTarget "ReactiveMoya-Unbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295670321D880E4400D9D303 /* Debug */,
+				295670331D880E4400D9D303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29D6410A1D86B86F00C4194A /* Build configuration list for PBXProject "Moya-Unbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
