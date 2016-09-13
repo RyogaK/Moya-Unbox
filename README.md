@@ -1,11 +1,10 @@
 Moya-Unbox
 ============
+[![Carthage
+compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-- [Unbox](https://github.com/JohnSundell/Unbox)  
-- [Moya](https://github.com/Moya/Moya)
-- [RxSwift](https://github.com/ReactiveX/RxSwift) 
-
-Inspired by [Moya-ObjectMapper](https://github.com/ivanbruel/Moya-ObjectMapper).
+[Unbox](https://github.com/JohnSundell/Unbox) bindings for [Moya](https://github.com/Moya/Moya) for fabulous JSON serialization.
+Supports [RxSwift](https://github.com/ReactiveX/RxSwift/) and [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa/) bindings as well.
 
 # Installation
 
