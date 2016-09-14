@@ -11,7 +11,7 @@ import ReactiveCocoa
 import ReactiveMoya
 import Unbox
 
-public extension SignalProducerType where Value == ReactiveMoya.Response, Error == ReactiveMoya.Error {
+public extension SignalProducerType where Value == Response, Error == Error {
     public func mapObject<T: Unboxable>(type: T.Type) -> SignalProducer<T, Error> {
         return producer.flatMap(.Latest) { response -> SignalProducer<T, Error> in
             return unwrapThrowable { try response.mapObject(T) }
@@ -25,11 +25,11 @@ public extension SignalProducerType where Value == ReactiveMoya.Response, Error 
     }
 }
 
-private func unwrapThrowable<T>(throwable: () throws -> T) -> SignalProducer<T, ReactiveMoya.Error> {
+private func unwrapThrowable<T, Error>(throwable: () throws -> T) -> SignalProducer<T, Error> {
     do {
         return SignalProducer(value: try throwable())
     } catch {
-        return SignalProducer(error: error as! ReactiveMoya.Error)
+        return SignalProducer(error: error as! Error)
     }
 }
 
