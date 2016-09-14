@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "295670001D880E3B00D9D303"
-               BuildableName = "RxMoya-Unbox.framework"
+               BuildableName = "RxMoya_Unbox.framework"
                BlueprintName = "RxMoya-Unbox"
                ReferencedContainer = "container:Moya-Unbox.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "295670001D880E3B00D9D303"
-            BuildableName = "RxMoya-Unbox.framework"
+            BuildableName = "RxMoya_Unbox.framework"
             BlueprintName = "RxMoya-Unbox"
             ReferencedContainer = "container:Moya-Unbox.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "295670001D880E3B00D9D303"
-            BuildableName = "RxMoya-Unbox.framework"
+            BuildableName = "RxMoya_Unbox.framework"
             BlueprintName = "RxMoya-Unbox"
             ReferencedContainer = "container:Moya-Unbox.xcodeproj">
          </BuildableReference>

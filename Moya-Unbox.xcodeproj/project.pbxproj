@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		295670021D880E3B00D9D303 /* SignalProducer+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F382741D878B4A0035054D /* SignalProducer+Unbox.swift */; };
 		295670031D880E3B00D9D303 /* Observable+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297A99981D86BD700074123C /* Observable+Unbox.swift */; };
 		295670061D880E3B00D9D303 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412E1D86BA3B00C4194A /* Alamofire.framework */; };
 		295670081D880E3B00D9D303 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412F1D86BA3B00C4194A /* Result.framework */; };
@@ -22,7 +21,6 @@
 		29D641301D86BA3B00C4194A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412E1D86BA3B00C4194A /* Alamofire.framework */; };
 		29D641311D86BA3B00C4194A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412F1D86BA3B00C4194A /* Result.framework */; };
 		29D641351D86BC9000C4194A /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D641341D86BC9000C4194A /* Moya.framework */; };
-		29F382751D878B4A0035054D /* SignalProducer+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F382741D878B4A0035054D /* SignalProducer+Unbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -286,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				295670021D880E3B00D9D303 /* SignalProducer+Unbox.swift in Sources */,
 				295670031D880E3B00D9D303 /* Observable+Unbox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F382751D878B4A0035054D /* SignalProducer+Unbox.swift in Sources */,
 				297A999B1D86BDF00074123C /* Response+Unbox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
