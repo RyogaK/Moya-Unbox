@@ -1,3 +1,4 @@
-github "johnsundell/unbox"
-github "Moya/Moya"
-github "ReactiveCocoa/ReactiveCocoa"
+github "johnsundell/unbox" ~> 1.9.0
+github "Moya/Moya" ~> 7.0.0
+github "ReactiveCocoa/ReactiveCocoa" ~> 4.2.2
+github "ReactiveX/RxSwift" ~> 2.6.0
