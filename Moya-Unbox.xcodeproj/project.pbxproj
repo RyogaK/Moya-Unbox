@@ -14,13 +14,13 @@
 		295670261D880E4400D9D303 /* SignalProducer+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F382741D878B4A0035054D /* SignalProducer+Unbox.swift */; };
 		2956702A1D880E4400D9D303 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412E1D86BA3B00C4194A /* Alamofire.framework */; };
 		2956702C1D880E4400D9D303 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412F1D86BA3B00C4194A /* Result.framework */; };
-		2956702E1D880E4400D9D303 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F382711D878B1B0035054D /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		295670371D880ED400D9D303 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295670361D880ED400D9D303 /* RxMoya.framework */; };
 		295670391D880EE200D9D303 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295670381D880EE200D9D303 /* ReactiveMoya.framework */; };
 		297A999B1D86BDF00074123C /* Response+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297A999A1D86BDF00074123C /* Response+Unbox.swift */; };
 		29D641301D86BA3B00C4194A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412E1D86BA3B00C4194A /* Alamofire.framework */; };
 		29D641311D86BA3B00C4194A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412F1D86BA3B00C4194A /* Result.framework */; };
 		29D641351D86BC9000C4194A /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D641341D86BC9000C4194A /* Moya.framework */; };
+		3B6B846A1DEE988400AA37E1 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6B84691DEE988400AA37E1 /* ReactiveSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		29D6412F1D86BA3B00C4194A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		29D641321D86BC7D00C4194A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		29D641341D86BC9000C4194A /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
-		29F382711D878B1B0035054D /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		29F382741D878B4A0035054D /* SignalProducer+Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Unbox.swift"; sourceTree = "<group>"; };
+		3B6B84691DEE988400AA37E1 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			files = (
 				2956702A1D880E4400D9D303 /* Alamofire.framework in Frameworks */,
 				2956702C1D880E4400D9D303 /* Result.framework in Frameworks */,
-				2956702E1D880E4400D9D303 /* ReactiveCocoa.framework in Frameworks */,
 				295670391D880EE200D9D303 /* ReactiveMoya.framework in Frameworks */,
+				3B6B846A1DEE988400AA37E1 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,13 +92,7 @@
 				29D6412A1D86B8B600C4194A /* Configs */,
 				29D641111D86B86F00C4194A /* Products */,
 				29D6412B1D86B8BD00C4194A /* Sources */,
-				29D6412E1D86BA3B00C4194A /* Alamofire.framework */,
-				29D641341D86BC9000C4194A /* Moya.framework */,
-				295670361D880ED400D9D303 /* RxMoya.framework */,
-				29F382711D878B1B0035054D /* ReactiveCocoa.framework */,
-				29D6412F1D86BA3B00C4194A /* Result.framework */,
-				295670381D880EE200D9D303 /* ReactiveMoya.framework */,
-				29D641321D86BC7D00C4194A /* RxSwift.framework */,
+				3B6B846B1DEE989F00AA37E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,19 +119,33 @@
 		29D6412B1D86B8BD00C4194A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				29F382731D878B210035054D /* ReactiveCocoa */,
+				29F382731D878B210035054D /* ReactiveSwift */,
 				297A999C1D86C1100074123C /* RxSwift */,
 				297A999A1D86BDF00074123C /* Response+Unbox.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		29F382731D878B210035054D /* ReactiveCocoa */ = {
+		29F382731D878B210035054D /* ReactiveSwift */ = {
 			isa = PBXGroup;
 			children = (
 				29F382741D878B4A0035054D /* SignalProducer+Unbox.swift */,
 			);
-			path = ReactiveCocoa;
+			path = ReactiveSwift;
+			sourceTree = "<group>";
+		};
+		3B6B846B1DEE989F00AA37E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B6B84691DEE988400AA37E1 /* ReactiveSwift.framework */,
+				29D6412E1D86BA3B00C4194A /* Alamofire.framework */,
+				29D641341D86BC9000C4194A /* Moya.framework */,
+				295670361D880ED400D9D303 /* RxMoya.framework */,
+				29D6412F1D86BA3B00C4194A /* Result.framework */,
+				295670381D880EE200D9D303 /* ReactiveMoya.framework */,
+				29D641321D86BC7D00C4194A /* RxSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +371,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = "Configs/ReactiveMoya-Unbox-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -386,6 +395,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = "Configs/ReactiveMoya-Unbox-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
