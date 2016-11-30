@@ -21,6 +21,8 @@
 		29D641311D86BA3B00C4194A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D6412F1D86BA3B00C4194A /* Result.framework */; };
 		29D641351D86BC9000C4194A /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D641341D86BC9000C4194A /* Moya.framework */; };
 		3B6B846A1DEE988400AA37E1 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6B84691DEE988400AA37E1 /* ReactiveSwift.framework */; };
+		3B6B846C1DEE9B3C00AA37E1 /* Response+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297A999A1D86BDF00074123C /* Response+Unbox.swift */; };
+		3B6B846D1DEE9B3C00AA37E1 /* Response+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297A999A1D86BDF00074123C /* Response+Unbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -300,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				295670031D880E3B00D9D303 /* Observable+Unbox.swift in Sources */,
+				3B6B846C1DEE9B3C00AA37E1 /* Response+Unbox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				295670261D880E4400D9D303 /* SignalProducer+Unbox.swift in Sources */,
+				3B6B846D1DEE9B3C00AA37E1 /* Response+Unbox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,19 +25,3 @@ public extension ObservableType where E == Response {
         }
     }
 }
-
-public extension Response {
-    public func mapObject<T: Unboxable>(_ type: T.Type) throws -> T {
-        guard let json = try mapJSON() as? UnboxableDictionary else {
-            throw Error.jsonMapping(self)
-        }
-        return try unbox(dictionary: json)
-    }
-    
-    public func mapArray<T: Unboxable>(_ type: T.Type) throws -> [T] {
-        guard let jsonArray = try mapJSON() as? [UnboxableDictionary] else {
-            throw Error.jsonMapping(self)
-        }
-        return try unbox(dictionaries: jsonArray)
-    }
-}

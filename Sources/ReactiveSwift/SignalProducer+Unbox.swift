@@ -33,19 +33,3 @@ private func unwrapThrowable<T, Error>(_ throwable: () throws -> T) -> SignalPro
         return SignalProducer(error: error as! Error)
     }
 }
-
-public extension Response {
-    public func mapObject<T: Unboxable>(_ type: T.Type) throws -> T {
-        guard let json = try mapJSON() as? UnboxableDictionary else {
-            throw Error.jsonMapping(self)
-        }
-        return try unbox(dictionary: json)
-    }
-    
-    public func mapArray<T: Unboxable>(_ type: T.Type) throws -> [T] {
-        guard let jsonArray = try mapJSON() as? [UnboxableDictionary] else {
-            throw Error.jsonMapping(self)
-        }
-        return try unbox(dictionaries: jsonArray)
-    }
-}
