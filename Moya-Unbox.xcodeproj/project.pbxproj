@@ -239,8 +239,15 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ryoga Kitagawa";
 				TargetAttributes = {
+					295670001D880E3B00D9D303 = {
+						LastSwiftMigration = 0810;
+					};
+					295670241D880E4400D9D303 = {
+						LastSwiftMigration = 0810;
+					};
 					29D6410F1D86B86F00C4194A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -335,6 +342,7 @@
 				PRODUCT_NAME = RxMoya_Unbox;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -357,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moya-unbox.RxMoya-Unbox";
 				PRODUCT_NAME = RxMoya_Unbox;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -381,6 +390,7 @@
 				PRODUCT_NAME = ReactiveMoya_Unbox;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -404,6 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moya-unbox.ReactiveMoya-Unbox";
 				PRODUCT_NAME = ReactiveMoya_Unbox;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -518,6 +529,7 @@
 				PRODUCT_NAME = Moya_Unbox;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -540,6 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moya-unbox.Moya-Unbox";
 				PRODUCT_NAME = Moya_Unbox;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

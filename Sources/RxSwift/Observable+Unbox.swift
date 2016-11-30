@@ -9,34 +9,35 @@
 import Foundation
 import RxSwift
 import RxMoya
+import Moya
 import Unbox
 
 public extension ObservableType where E == Response {
-    public func mapObject<T: Unboxable>(type: T.Type) -> Observable<T> {
+    public func mapObject<T: Unboxable>(_ type: T.Type) -> Observable<T> {
         return flatMap { response -> Observable<T> in
-            return Observable.just(try response.mapObject(T))
+            return Observable.just(try response.mapObject(T.self))
         }
     }
     
-    public func mapArray<T: Unboxable>(type: T.Type) -> Observable<[T]> {
+    public func mapArray<T: Unboxable>(_ type: T.Type) -> Observable<[T]> {
         return flatMap { response -> Observable<[T]> in
-            return Observable.just(try response.mapArray(T))
+            return Observable.just(try response.mapArray(T.self))
         }
     }
 }
 
 public extension Response {
-    public func mapObject<T: Unboxable>(type: T.Type) throws -> T {
+    public func mapObject<T: Unboxable>(_ type: T.Type) throws -> T {
         guard let json = try mapJSON() as? UnboxableDictionary else {
-            throw Error.JSONMapping(self)
+            throw Error.jsonMapping(self)
         }
-        return try Unbox(json)
+        return try unbox(dictionary: json)
     }
     
-    public func mapArray<T: Unboxable>(type: T.Type) throws -> [T] {
+    public func mapArray<T: Unboxable>(_ type: T.Type) throws -> [T] {
         guard let jsonArray = try mapJSON() as? [UnboxableDictionary] else {
-            throw Error.JSONMapping(self)
+            throw Error.jsonMapping(self)
         }
-        return try Unbox(jsonArray)
+        return try unbox(dictionaries: jsonArray)
     }
 }

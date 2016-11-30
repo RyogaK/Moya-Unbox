@@ -11,17 +11,17 @@ import Moya
 import Unbox
 
 public extension Response {
-    public func mapObject<T: Unboxable>(type: T.Type) throws -> T {
+    public func mapObject<T: Unboxable>(_ type: T.Type) throws -> T {
         guard let json = try mapJSON() as? UnboxableDictionary else {
-            throw Error.JSONMapping(self)
+            throw Error.jsonMapping(self)
         }
-        return try Unbox(json)
+        return try unbox(dictionary: json)
     }
     
-    public func mapArray<T: Unboxable>(type: T.Type) throws -> [T] {
+    public func mapArray<T: Unboxable>(_ type: T.Type) throws -> [T] {
         guard let jsonArray = try mapJSON() as? [UnboxableDictionary] else {
-            throw Error.JSONMapping(self)
+            throw Error.jsonMapping(self)
         }
-        return try Unbox(jsonArray)
+        return try unbox(dictionaries: jsonArray)
     }
 }

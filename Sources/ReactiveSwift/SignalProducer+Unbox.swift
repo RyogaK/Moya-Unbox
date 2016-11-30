@@ -9,23 +9,24 @@
 import Foundation
 import ReactiveSwift
 import ReactiveMoya
+import Moya
 import Unbox
 
-public extension SignalProducerType where Value == Response, Error == Error {
-    public func mapObject<T: Unboxable>(type: T.Type) -> SignalProducer<T, Error> {
-        return producer.flatMap(.Latest) { response -> SignalProducer<T, Error> in
-            return unwrapThrowable { try response.mapObject(T) }
+public extension SignalProducerProtocol where Value == Response, Error == Error {
+    public func mapObject<T: Unboxable>(_ type: T.Type) -> SignalProducer<T, Error> {
+        return producer.flatMap(.latest) { response -> SignalProducer<T, Error> in
+            return unwrapThrowable { try response.mapObject(T.self) }
         }
     }
     
-    public func mapArray<T: Unboxable>(type: T.Type) -> SignalProducer<[T], Error> {
-        return producer.flatMap(.Latest) { response -> SignalProducer<[T], Error> in
-            return unwrapThrowable { try response.mapArray(T) }
+    public func mapArray<T: Unboxable>(_ type: T.Type) -> SignalProducer<[T], Error> {
+        return producer.flatMap(.latest) { response -> SignalProducer<[T], Error> in
+            return unwrapThrowable { try response.mapArray(T.self) }
         }
     }
 }
 
-private func unwrapThrowable<T, Error>(throwable: () throws -> T) -> SignalProducer<T, Error> {
+private func unwrapThrowable<T, Error>(_ throwable: () throws -> T) -> SignalProducer<T, Error> {
     do {
         return SignalProducer(value: try throwable())
     } catch {
@@ -34,17 +35,17 @@ private func unwrapThrowable<T, Error>(throwable: () throws -> T) -> SignalProdu
 }
 
 public extension Response {
-    public func mapObject<T: Unboxable>(type: T.Type) throws -> T {
+    public func mapObject<T: Unboxable>(_ type: T.Type) throws -> T {
         guard let json = try mapJSON() as? UnboxableDictionary else {
-            throw Error.JSONMapping(self)
+            throw Error.jsonMapping(self)
         }
-        return try Unbox(json)
+        return try unbox(dictionary: json)
     }
     
-    public func mapArray<T: Unboxable>(type: T.Type) throws -> [T] {
+    public func mapArray<T: Unboxable>(_ type: T.Type) throws -> [T] {
         guard let jsonArray = try mapJSON() as? [UnboxableDictionary] else {
-            throw Error.JSONMapping(self)
+            throw Error.jsonMapping(self)
         }
-        return try Unbox(jsonArray)
+        return try unbox(dictionaries: jsonArray)
     }
 }
