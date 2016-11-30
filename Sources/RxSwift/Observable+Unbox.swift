@@ -37,13 +37,13 @@ public extension ObservableType where E == Response {
         }
     }
 
-    public func unbox<T: Unboxable>(object: T.Type, atKey: String) -> Observable<[T]> {
+    public func unbox<T: Unboxable>(array: T.Type, atKey: String) -> Observable<[T]> {
         return flatMap { response -> Observable<[T]> in
             return Observable.just(try response.unbox(array: T.self, atKey: atKey))
         }
     }
 
-    public func unbox<T: Unboxable>(object: T.Type, atKeyPath: String) -> Observable<[T]> {
+    public func unbox<T: Unboxable>(array: T.Type, atKeyPath: String) -> Observable<[T]> {
         return flatMap { response -> Observable<[T]> in
             return Observable.just(try response.unbox(array: T.self, atKeyPath: atKeyPath))
         }
