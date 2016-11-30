@@ -13,15 +13,15 @@ import Moya
 import Unbox
 
 public extension SignalProducerProtocol where Value == Response, Error == Error {
-    public func mapObject<T: Unboxable>(_ type: T.Type) -> SignalProducer<T, Error> {
+    public func unbox<T: Unboxable>(object: T.Type) -> SignalProducer<T, Error> {
         return producer.flatMap(.latest) { response -> SignalProducer<T, Error> in
-            return unwrapThrowable { try response.mapObject(T.self) }
+            return unwrapThrowable { try response.unbox(object: T.self) }
         }
     }
     
-    public func mapArray<T: Unboxable>(_ type: T.Type) -> SignalProducer<[T], Error> {
+    public func unbox<T: Unboxable>(array: T.Type) -> SignalProducer<[T], Error> {
         return producer.flatMap(.latest) { response -> SignalProducer<[T], Error> in
-            return unwrapThrowable { try response.mapArray(T.self) }
+            return unwrapThrowable { try response.unbox(array: T.self) }
         }
     }
 }

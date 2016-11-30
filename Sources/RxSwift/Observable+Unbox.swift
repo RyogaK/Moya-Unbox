@@ -13,15 +13,15 @@ import Moya
 import Unbox
 
 public extension ObservableType where E == Response {
-    public func mapObject<T: Unboxable>(_ type: T.Type) -> Observable<T> {
+    public func unbox<T: Unboxable>(object: T.Type) -> Observable<T> {
         return flatMap { response -> Observable<T> in
-            return Observable.just(try response.mapObject(T.self))
+            return Observable.just(try response.unbox(object: T.self))
         }
     }
     
-    public func mapArray<T: Unboxable>(_ type: T.Type) -> Observable<[T]> {
+    public func unbox<T: Unboxable>(array: T.Type) -> Observable<[T]> {
         return flatMap { response -> Observable<[T]> in
-            return Observable.just(try response.mapArray(T.self))
+            return Observable.just(try response.unbox(array: T.self))
         }
     }
 }
