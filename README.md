@@ -85,6 +85,12 @@ GitHubProvider.request(.UserRepositories(username))
   }.addDisposableTo(disposeBag)
 ```
 
+## Key Path Support
+
+You can also `unbox` at specific keys and key paths by using the
+`unbox(object:, atKey:)` and `unbox(object:, atKeyPath:)` functions (as well as
+the `array` equivalents).
+
 # Contributing
 
 Feel free to make issues and pull requests!
