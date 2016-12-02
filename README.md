@@ -4,7 +4,7 @@ Moya-Unbox
 compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 [Unbox](https://github.com/JohnSundell/Unbox) bindings for [Moya](https://github.com/Moya/Moya) for fabulous JSON serialization.
-Supports [RxSwift](https://github.com/ReactiveX/RxSwift/) and [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa/) bindings as well.
+Supports [RxSwift](https://github.com/ReactiveX/RxSwift/) and [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift/) bindings as well.
 
 # Installation
 
@@ -24,14 +24,14 @@ import Unbox
 
 struct Repository: Unboxable {
 
-  let identifier: Int!
+  let identifier: Int
   let language: String?
-  let url: String!
-  
-  init(unboxer: Unboxer) {
-    identifier = unboxer.unbox("id")
+  let url: URL
+
+  init(unboxer: Unboxer) throws {
+    identifier = try unboxer.unbox("id")
     language = unboxer.unbox("language")
-    url = unboxer.unbox("url")
+    url = try unboxer.unbox("url")
   }
 }
 ```
@@ -48,7 +48,7 @@ GitHubProvider.request(.UserRepositories(username), completion: { result in
     switch result {
     case let .Success(response):
         do {
-            if let repos = try response.mapArray(Repository.self) {
+            if let repos = try response.unbox(array: Repository.self) {
               self.repos = repos
             } else {
               success = false
@@ -72,7 +72,7 @@ GitHubProvider.request(.UserRepositories(username), completion: { result in
 
 ```swift
 GitHubProvider.request(.UserRepositories(username))
-  .mapArray(Repository.self)
+  .unbox(array: Repository.self)
   .subscribe { event -> Void in
     switch event {
     case .Next(let repos):
@@ -84,6 +84,12 @@ GitHubProvider.request(.UserRepositories(username))
     }
   }.addDisposableTo(disposeBag)
 ```
+
+## Key Path Support
+
+You can also `unbox` at specific keys and key paths by using the
+`unbox(object:, atKey:)` and `unbox(object:, atKeyPath:)` functions (as well as
+the `array` equivalents).
 
 # Contributing
 

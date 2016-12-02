@@ -9,34 +9,43 @@
 import Foundation
 import RxSwift
 import RxMoya
+import Moya
 import Unbox
 
 public extension ObservableType where E == Response {
-    public func mapObject<T: Unboxable>(type: T.Type) -> Observable<T> {
+    public func unbox<T: Unboxable>(object: T.Type) -> Observable<T> {
         return flatMap { response -> Observable<T> in
-            return Observable.just(try response.mapObject(T))
+            return Observable.just(try response.unbox(object: T.self))
         }
     }
-    
-    public func mapArray<T: Unboxable>(type: T.Type) -> Observable<[T]> {
-        return flatMap { response -> Observable<[T]> in
-            return Observable.just(try response.mapArray(T))
-        }
-    }
-}
 
-public extension Response {
-    public func mapObject<T: Unboxable>(type: T.Type) throws -> T {
-        guard let json = try mapJSON() as? UnboxableDictionary else {
-            throw Error.JSONMapping(self)
+    public func unbox<T: Unboxable>(object: T.Type, atKey: String) -> Observable<T> {
+        return flatMap { response -> Observable<T> in
+            return Observable.just(try response.unbox(object: T.self, atKey: atKey))
         }
-        return try Unbox(json)
     }
-    
-    public func mapArray<T: Unboxable>(type: T.Type) throws -> [T] {
-        guard let jsonArray = try mapJSON() as? [UnboxableDictionary] else {
-            throw Error.JSONMapping(self)
+
+    public func unbox<T: Unboxable>(object: T.Type, atKeyPath: String) -> Observable<T> {
+        return flatMap { response -> Observable<T> in
+            return Observable.just(try response.unbox(object: T.self, atKeyPath: atKeyPath))
         }
-        return try Unbox(jsonArray)
+    }
+
+    public func unbox<T: Unboxable>(array: T.Type) -> Observable<[T]> {
+        return flatMap { response -> Observable<[T]> in
+            return Observable.just(try response.unbox(array: T.self))
+        }
+    }
+
+    public func unbox<T: Unboxable>(array: T.Type, atKey: String) -> Observable<[T]> {
+        return flatMap { response -> Observable<[T]> in
+            return Observable.just(try response.unbox(array: T.self, atKey: atKey))
+        }
+    }
+
+    public func unbox<T: Unboxable>(array: T.Type, atKeyPath: String) -> Observable<[T]> {
+        return flatMap { response -> Observable<[T]> in
+            return Observable.just(try response.unbox(array: T.self, atKeyPath: atKeyPath))
+        }
     }
 }
