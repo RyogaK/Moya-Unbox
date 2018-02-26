@@ -6,6 +6,10 @@ compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=fl
 [Unbox](https://github.com/JohnSundell/Unbox) bindings for [Moya](https://github.com/Moya/Moya) for fabulous JSON serialization.
 Supports [RxSwift](https://github.com/ReactiveX/RxSwift/) and [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift/) bindings as well.
 
+# DEPRECATED!!
+It is no longer need to use Unbox in Swift4.   
+For more detail: https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types
+
 # Installation
 
 ## Carthage
